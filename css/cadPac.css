@@ -35,14 +35,7 @@ main{
 	letter-spacing: 0.8;
 }
 .formu{
-    /*
-    margin: auto;
-    min-width: 340px;
-    max-width: 670px;
-  
-   min-height: 350px;
-   max-height: 400px;
-   */
+ 
    width: 380px;
    height: 480px;
    position: relative;
@@ -97,9 +90,9 @@ a{
     transition: .5s;
 }
 
-.email, .senha, .nome, .tel {
+input#register\:email, input#register\:senha, input#register\:nome, input#register\:tel {
     width: 100%;
-    padding: 10px 10px;
+    padding: 9px 10px;
     margin: 5px 0;
     border: 2.5px solid black;
     border-radius: 15px; ;
@@ -148,19 +141,8 @@ main{
     padding: 5px;
     overflow: hidden;
  }
- .login{
-    top: 160px;
-    position: absolute;
-    width: 280px;
-    transition: .5s;
-}
-.register{
-    top: 115px;
-    position: absolute;
-    width: 280px;
-    transition: .5s;
-}
-.email, .senha, .nome, .tel {
+ 
+input#register\:email, input#register\:senha, input#register\:nome, input#register\:tel {
     width: 75%;
     padding: 16px 25px;
     border: 2.5px solid black;
@@ -179,122 +161,6 @@ input[type=submit]{
     align-items: center;
 }
 }
-/*
-input[type=text], input[type=email],
-input[type=tel], input[type=password]{
-
-    width: 90%;
-    padding: 0.8rem 1.5rem; 
-    border: 2.5px solid black; 
-    border-radius: 15px;
-    
-}
-
-#nome, #email, #tel, #senha {
-    text-transform: uppercase;
-
-}
-
-#botao{   
-    margin: 0 auto;
-}
-
-.voltar {
-    padding: 1rem 1.5rem;
-    text-transform: uppercase;
-    background:#00a5cb; 
-    font-size: 20px;
-    border:#9fa5aa solid 2px;
-    border-radius: 10%;
-    cursor: pointer;
-    margin-left: 5%;
-}
-
-a{
-    color: black;
-}
-
-input[type=submit]{
-    float: right;
-    margin-right: 10%;
-    padding: 1rem 1.5rem;
-    text-transform: uppercase;
-    color: black;
-    background:#00a5cb; 
-    font-size: 20px;
-    border:#9fa5aa solid 2px;
-    border-radius: 8px;
-    cursor: pointer;
-}
-input[type=submit]:hover {
-    background-color: #4ccbe7;
-  }
-*/
-  
 
 
   
-/*
-form{
-  line-height: 5px;
-  background-color: #eaf1fa;
-  border-radius: 20px;
-  margin-top: 2%;
-  display: inline-block;
-  position: relative;
-  width: 70%;
-    height: 24rem;
- /*
-    min-width: 340px;
-    max-width: 670px;
-  
-   min-height: 350px;
-   max-height: 400px;
-   
-}
-*/
-/*
-  @media screen and (max-width:500px) {
-    h1{
-        font-size: 40px;
-    }
-    p{
-          font-size: 25px;
-      }
-
-      #titulo{
-          margin-top: 2%;
-      }
-      form{
-          height: 27rem;
-      }
-}
-
-  @media screen and (max-width: 800px) {
-      
-    body{
-        width: 100%;
-        height: 100%;
-    }
-    h1{
-        font-size: 50px;
-    }
-    p{
-          font-size: 30px;
-      }
-
-      #titulo{
-          margin-top: 15%;
-      }
-      form{
-          height: 28rem;
-      }
-
-      input[type=submit]{
-        float: none;
-        margin-left: 15%;
-      
-      }
-     
-}
-*/

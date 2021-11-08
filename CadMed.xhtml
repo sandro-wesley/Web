@@ -13,13 +13,13 @@
 
 <main>
 	<div id="formulario">
-      <h:form id="register" class="register">
+      <h:form id="register" class="register" onsubmit="validarDados()">
             
                 <div class="nome">
            
                  <label id="txt">  INSIRA SEU NOME</label>
                 <br />
-                <h:inputText id="nome" required="true" />
+                <h:inputText id="nome"  />
                 </div>
                 
                 
@@ -27,7 +27,7 @@
                 <div class="data">
            			<label id="txt">  INSIRA SUA DATA DE NASCIMENTO</label>
                 <br />
-                   <h:inputText  id="date" required="true" value=""/>
+                   <h:inputText  id="date" maxlength="10" onkeyup="mascara_data(this, this.value)" />
                  </div>
 
                 <br/>
@@ -35,7 +35,7 @@
                 <div class="tel">
                 <label id="txt">  INSIRA SEU TELEFONE</label>
                 <br />
-                    <h:inputText value="" id="tel" required="true" maxlength="11"/>
+                    <h:inputText id="tel"  maxlength="11" onkeypress="return somenteNumeros(event)"/>
          
                 </div>
                 
@@ -45,7 +45,7 @@
            
                     <label id="txt">  INSIRA SEU CPF</label>
                 <br />
-                    <h:inputText maxlength="11" required="true"  value="" id="cpf"/>
+                    <h:inputText maxlength="11" id="cpf" onkeypress="return somenteNumeros(event)"/>
                  </div>
 
                  <br/>
@@ -54,29 +54,29 @@
            
                     <label id="txt">  INSIRA SUA ESPECIALIDADE</label>
                 <br />
-                    <h:inputText value="" id="espec" required="true" />
+                    <h:inputText  id="espec" />
                  </div>
 
                  <div class="emailCadastro">
                     <label id="txt">  INSIRA SEU EMAIL</label>
                 <br />
-                <h:inputText id="email" required="true"/>
+                <h:inputText id="email" />
                  </div>
 
                     <div class="senhaCadastro">
                     <label id="txt"> INSIRA SUA SENHA</label>
                 <br />
-                <h:inputSecret  name="senha" id="senha" required="true"/>
+                <h:inputSecret  name="senha" id="senha" />
                      
                     </div>
                      <br/>
                   <div class="botao">
-                    <h:commandButton action = "#" value="Registrar" id="btnRegistrar" onclick="RegistrarMed()"/>
+                    <h:commandButton action = "#" value="Registrar" id="btnRegistrar" />
                     
                 </div>
         </h:form>
     </div>
 </main>
-
+<script type="text/javascript" src="js/cadMed.js"/>
 </body>
 </html>

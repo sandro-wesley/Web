@@ -30,7 +30,7 @@
                 <div class="data">
            			<label id="txt">  INSIRA SUA DATA DE NASCIMENTO</label>
                 <br />
-                   <h:inputText id="date"  onkeypress="validaData()" maxlength="10"/>
+                   <h:inputText id="date" maxlength="10" onkeyup="mascara_data(this, this.value)" />
                  </div>
 
                 <br/>
@@ -72,7 +72,7 @@
         </h:form>
     </div>
 </main>
-	 <script type="text/javascript" src="js/validar_form.js" />
+	 <script type="text/javascript" src="js/cadFunc.js" />
 
 </body>
 

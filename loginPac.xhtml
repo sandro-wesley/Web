@@ -23,18 +23,18 @@
                 <a href="CadastroPac.xhtml" class="btn" value="btn">REGITRE-SE</a>
             </div>   
 
-            <h:form  id="login" class="login">
+            <h:form  id="login" class="login" onsubmit="validarDados()">
               
                  <div id="email">
                  <label class="txt">  INSIRA SEU EMAIL</label>
-                     <h:inputText name="email" required="true" class="email"/>
+                     <h:inputText name="email" id="emaillogin" class="email"/>
                  </div>
  
                  <br/>
  
                  <div id="senha">
                      <label class="txt">  INSIRA SUA SENHA</label>
-                     <h:inputSecret name="senha" required="true" id="senhaLogin" class="senha"/>
+                     <h:inputSecret name="senha" id="senhaLogin" class="senha"/>
                  </div>
              
                  <div id="botao">
@@ -46,7 +46,7 @@
 
       </div>
     </main>
-    
+    	 <script type="text/javascript" src="js/loginPac.js" />
  
 </body>
 </html>

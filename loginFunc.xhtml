@@ -15,13 +15,13 @@
         <div class="formu">   
         	<h2>Bem Vindo </h2>
          
-         <h:form id="login" class="login">
+         <h:form id="login" class="login" onsubmit="validarDados()">
             <div class="entrar">
            
                 <div class="email">
                 <label id="txt">  INSIRA SEU EMAIL</label>
                 <br />
-                <h:inputText a:type="email" id="email"   />
+                <h:inputText id="email" />
             
                 </div>
 
@@ -34,13 +34,13 @@
              </div>
                  <br/>
                 <div class="botao">
-                <h:commandButton action = "#" value="entrar" id="btnEntrar" onclick="loginMed()"/>
+                <h:commandButton action = "#" value="entrar" id="btnEntrar"/>
                          
                 </div>
                 </div>
     </h:form>
     </div>
     </main>
-
+	<script type="text/javascript" src="js/loginFunc_med.js" />
 </body>
 </html>
