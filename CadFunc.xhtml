@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html  xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core">
+    
+    <head>
+<meta http-equiv="Content-Type" content="text/html; charset= UTF-8" />
+<link rel="stylesheet" type="text/css" href="css/cadFunc.css" media="screen" />
+
+		 
+<title>Cadastro de funcionario</title>
+</head>
+<body>
+
+
+<main>
+	<div id="formulario">
+      <h:form id="register" class="register" action="reg" onsubmit="validarDados()">
+
+                <div class="nome">
+           
+                 <label id="txt">  INSIRA SEU NOME</label>
+                <br />
+                <h:inputText id="nome" />
+                </div>
+                
+                
+
+                <div class="data">
+           			<label id="txt">  INSIRA SUA DATA DE NASCIMENTO</label>
+                <br />
+                   <h:inputText id="date"  onkeypress="validaData()" maxlength="10"/>
+                 </div>
+
+                <br/>
+
+                <div class="tel">
+                <label id="txt">  INSIRA SEU TELEFONE</label>
+                <br />
+                    <h:inputText id="tel" maxlength="11" onkeypress="return somenteNumeros(event)"/>
+         
+                </div>               
+
+                <div class="cpf">
+           
+                    <label id="txt">  INSIRA SEU CPF</label>
+                <br />
+                    <h:inputText maxlength="11" id="cpf" onkeypress="return somenteNumeros(event)"/>
+                 </div>
+
+                 <br/>
+
+                 <div class="emailCadastro">
+                    <label id="txt">  INSIRA SEU EMAIL</label>
+                <br />
+                <h:inputText id="email" />
+                 </div>
+
+                    <div class="senhaCadastro">
+                    <label id="txt"> INSIRA SUA SENHA</label>
+                <br />
+                <h:inputSecret  name="senha" id="senha" />   
+                    </div>
+                    
+                     <br/>
+                     
+                  <div class="botao">
+                    <h:commandButton value="Registrar" id="btnRegistrar" />
+                    
+                </div>
+        </h:form>
+    </div>
+</main>
+	 <script type="text/javascript" src="js/validar_form.js" />
+
+</body>
+
+</html>

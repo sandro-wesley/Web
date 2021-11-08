@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link rel="stylesheet" href="css/ADM.css" />
+    <title>Ideal Clinica</title>
+</head>
+
+<body>
+    <header>
+        <h1>Ideal Clinica</h1>
+        <div class="cadastros"> 
+	<a href="CadMed.xhtml" id="cadMedico">Cadastrar m&eacute;dico</a>
+	<label></label>
+	<a href="CadFunc.xhtml" id="cadFuncionario">Cadastrar Funcionario</a> 
+   </div>
+   </header>
+    <br />
+
+    <main>
+   <div class="conteiner">
+        <table>
+        <thead>
+        <tr>
+            <th>C&oacute;digo da consulta</th>
+            <th>Data</th>
+            <th>Hor&aacute;rio</th>
+            <th>C&oacute;digo do paciente</th>
+            <th>C&oacute;digo do m&eacute;dico</th>
+            <th>Id do prontu&aacute;rio</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>20/03/2021</td>
+            <td>11:05</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+<br/>
+<div class="botoes">
+    <h:commandButton id="confirmar" action="#" value="confirmar" onclick="confirmar()">
+       </h:commandButton>
+        <br />
+      <h:commandButton id="cancelar" action="#"  value="cancelar" onclick="cancelar()">
+       </h:commandButton>
+
+        </div>
+</main>
+</body>
+</html>

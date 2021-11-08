@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html  xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<link rel="stylesheet" type="text/css" href="css/Cadmed.css" media="screen" />
+<title>Cadastro de medico</title>
+</head>
+<body>
+
+<main>
+	<div id="formulario">
+      <h:form id="register" class="register">
+            
+                <div class="nome">
+           
+                 <label id="txt">  INSIRA SEU NOME</label>
+                <br />
+                <h:inputText id="nome" required="true" />
+                </div>
+                
+                
+
+                <div class="data">
+           			<label id="txt">  INSIRA SUA DATA DE NASCIMENTO</label>
+                <br />
+                   <h:inputText  id="date" required="true" value=""/>
+                 </div>
+
+                <br/>
+
+                <div class="tel">
+                <label id="txt">  INSIRA SEU TELEFONE</label>
+                <br />
+                    <h:inputText value="" id="tel" required="true" maxlength="11"/>
+         
+                </div>
+                
+                
+
+                <div class="cpf">
+           
+                    <label id="txt">  INSIRA SEU CPF</label>
+                <br />
+                    <h:inputText maxlength="11" required="true"  value="" id="cpf"/>
+                 </div>
+
+                 <br/>
+
+                 <div class="espec">
+           
+                    <label id="txt">  INSIRA SUA ESPECIALIDADE</label>
+                <br />
+                    <h:inputText value="" id="espec" required="true" />
+                 </div>
+
+                 <div class="emailCadastro">
+                    <label id="txt">  INSIRA SEU EMAIL</label>
+                <br />
+                <h:inputText id="email" required="true"/>
+                 </div>
+
+                    <div class="senhaCadastro">
+                    <label id="txt"> INSIRA SUA SENHA</label>
+                <br />
+                <h:inputSecret  name="senha" id="senha" required="true"/>
+                     
+                    </div>
+                     <br/>
+                  <div class="botao">
+                    <h:commandButton action = "#" value="Registrar" id="btnRegistrar" onclick="RegistrarMed()"/>
+                    
+                </div>
+        </h:form>
+    </div>
+</main>
+
+</body>
+</html>

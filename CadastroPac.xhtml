@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+<head>
+
+ 	<link rel="stylesheet" type="text/css" href="css/cadPac.css" media="screen" />
+
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+
+<title>Sou Paciente</title>
+</head>
+<body>
+
+ <main>
+      
+        <div class="formu"> 
+            <div class="btnLR">
+                <!-- <div id="btn"></div> -->
+                <a href="loginPac.xhtml" class="btnl">Entrar</a>
+                <a href="CadastroPac.xhtml" class="btn" >REGITRE-SE</a>
+            </div>   
+
+         <h:form  id="register" class="register">
+                <div id="nome">
+           <label class="txt">  INSIRA SEU NOME COMPLETO</label>
+                   <h:inputText   name="nome" class="nome"/>
+                </div>
+                
+              
+
+                <div id="email">
+                    <label class="txt">  INSIRA SEU EMAIL</label>
+                <br />
+                <h:inputText type="email" class="email" />
+                </div>
+
+               
+
+                <div id="tel">
+                <label class="txt">  INSIRA SEU TELEFONE</label>
+                    <h:inputText type="tel" name="tel"    class="tel"/>
+                </div>
+                
+                
+
+                <div id="senha">
+                    <label class="txt">  INSIRA SUA SENHA</label>
+                    <h:inputSecret name="senha"  class="senha"/>
+                </div>
+            
+                <div id="botao">
+                    <h:commandButton type="submit" value="continuar" id="senhaRegi" class="continuar"/>
+                
+                </div>
+         </h:form >
+    
+      </div>
+    </main>
+    
+ 
+</body>
+</html>
